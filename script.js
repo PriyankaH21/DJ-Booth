@@ -2,18 +2,24 @@ const buttons = document.getElementsByClassName('buttons');
 const loops = document.getElementsByTagName('audio');
 let isPlaying = [false,false,false,false];
 
-buttons[0].addEventListener('click',function() {
-  console.log('button1')
-  if (isPlaying[0] === true ){
-    loops[0].pause();
-    loops[0].load();
+for (let i = 0; i < buttons.length ; i++){
+
+
+buttons[i].addEventListener('click',function() {
+  buttons[i].classList.toggle('pushed');
+  if (isPlaying[i] === true ){
+    loops[i].pause();
+    loops[i].load();
   }
   else{
-    loops[0].play();
+    loops[i].play();
   }
-  isPlaying[0] =!isPlaying[0];
+  isPlaying[i] =!isPlaying[i];
 })
+}
+/*
 buttons[1].addEventListener('click',function() {
+  buttons[1].classList.toggle('pushed');
   if (isPlaying[1] === true ){
     loops[1].pause();
     loops[1].load();
@@ -43,3 +49,4 @@ buttons[3].addEventListener('click',function() {
   }
   isPlaying[3] =!isPlaying[3];
 })
+*/

@@ -13,3 +13,7 @@
 .buttons:hover {
   background: yellow;
 }
+
+.pushed {
+  background: blue;
+}
