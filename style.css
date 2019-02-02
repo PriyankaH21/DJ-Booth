@@ -1,0 +1,15 @@
+.buttons {
+  height: 200px;
+  width: 200px;
+  border: 2px solid purple;
+  border-color: blue;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  transition: 0.5s;
+
+}
+
+.buttons:hover {
+  background: yellow;
+}
